@@ -16,7 +16,8 @@ namespace BackRolePermission
             BackRolePermissions();
         }
         //public static string connectionString = "Data Source=.\\sqlserver2019; Initial Catalog = WeicaiTest; Integrated Security = SSPI";
-        public static string connectionString = "Data Source=ECISPOWERUATTES;Initial Catalog=Eisai_DMT;User Id=sa;Password=123456;";
+        //public static string connectionString = "Data Source=ECISPOWERUATTES;Initial Catalog=Eisai_DMT;User Id=sa;Password=123456;";
+        public static string connectionString = "Data Source=ECISPOWERBI;Initial Catalog=Eisai_DMT;User Id=service;Password=fisk@EC1;";
         public static void BackRolePermissions()
         {
 
@@ -24,7 +25,7 @@ namespace BackRolePermission
             //string DataBases = "Eisai_Sales";
 
             string DomainAccount = "ROOT_EISAI"; //域账号
-            string Instance = "ECISPOWERUATTES";
+            string Instance = "ECISPOWERBI";
             string DataBases = "Eisai_BAIM";
 
             TOMHelper TOM = new TOMHelper(Instance, DataBases);
